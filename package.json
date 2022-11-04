@@ -4,16 +4,18 @@
   "version": "0.1.0",
   "description": "A Strapi application",
   "scripts": {
-    "develop": "strapi develop",
-    "start": "strapi start",
-    "build": "strapi build",
-    "strapi": "strapi"
+    "develop": "PORT=1337 keystone dev",
+    "start": "PORT=1337 keystone start",
+    "build": "keystone build",
+    "strapi": "keystone"
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.4.5",
-    "@strapi/plugin-users-permissions": "4.4.5",
+    "@keystone-6/auth": "^5.0.0",
+    "@keystone-6/core": "^3.0.2",
     "@strapi/plugin-i18n": "4.4.5",
+    "@strapi/plugin-users-permissions": "4.4.5",
+    "@strapi/strapi": "4.4.5",
     "better-sqlite3": "7.4.6"
   },
   "author": {
